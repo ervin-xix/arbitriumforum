@@ -3,7 +3,7 @@ import { ABI, deployedAddress } from "../contracts/deployed-contract";
 import type { CommentDetails, PostDetails } from "../types/posts/types";
 import { readContract } from "wagmi/actions";
 import config from "../wagmi";
-import ShareableCommentComponent from "./ShareableCommentComponent";
+import ShareableCommentComponent from "./ShareableCommentComponent.tsx";
 import { useReadForumGetCommentsFromPost } from "../contracts/generated";
 
 const Comments = ({ post }: { post: PostDetails }) => {
